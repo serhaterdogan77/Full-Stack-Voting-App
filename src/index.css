@@ -1,8 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +11,50 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+nav > a{
+  padding: 0 10px 10px 0;
+  color: #400;
+  text-decoration: none;
+}
+
+nav > a:hover {
+  text-decoration: underline;
+}
+
+input {
+  padding: 6px;
+  font-size: 18px;
+}
+
+button {
+  padding: 6px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+progress {
+  margin-top: 6px;
+  margin-bottom: 10px 0;
+}
+
+.vote_count {
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+.question_link {
+  text-decoration: none;
+}
+
+.question_link:hover {
+  text-decoration: underline;
 }
